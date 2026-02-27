@@ -459,10 +459,9 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 873px) {
-            
-                display: block;
-              
+        @media (max-width: 800px) {
+            .hideonmobile{
+                display: none;
             }
             .menu-button{
                 display: block;
@@ -539,16 +538,15 @@
             section {
                 padding: 4rem 5%;
             }
-        
+        }
 
-        @media (max-width: 873px) {
-             
+        @media (max-width: 800px) {
+             .hideonmobile{
+                display: none;
             }
 
-            @media (max-width: 873px) {
+            @media (max-width: 400px) {
              .sidebar{
-                 display: none;
-                
                 width: 100%;
             }
 
@@ -620,10 +618,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
              <ul>
-                <li><a href="#home">Home</a></li>
-                <li ><a href="#about">About</a></li>
-                <li ><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="hideonmobile"><a href="#home">Home</a></li>
+                <li class="hideonmobile"><a href="#about">About</a></li>
+                <li class="hideonmobile"><a href="#projects">Projects</a></li>
+                <li class="hideonmobile"><a href="#contact">Contact</a></li>
                 <li class="meun-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></a></li>
 
             </ul>
@@ -724,7 +722,7 @@
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
-           <button type="submit">Send Message</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
@@ -742,4 +740,5 @@
     
 </body>
 </html>
+
 
